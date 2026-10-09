@@ -4,7 +4,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Danny Basavaraju | Portfolio</title>
+  <meta name="author" content="Danny Basavaraju" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Danny Basavaraju | Principal Engineer | AI Platforms &amp; Agentic AI</title>
+  <meta name="description" content="Danny Basavaraju — Principal Engineer building multi-agent AI systems, LLMOps platforms, healthcare intelligence, and scalable cloud software." />
+  <meta property="og:title" content="Danny Basavaraju | AI Platforms &amp; Agentic AI" />
+  <meta property="og:description" content="Principal Engineer building multi-agent AI systems, LLMOps, evaluations, governance, healthcare intelligence, and scalable platforms." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Danny Basavaraju" />
+  <meta property="og:url" content="https://dannyb66.github.io/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Danny Basavaraju | AI Platforms &amp; Agentic AI" />
+  <meta name="twitter:description" content="Principal Engineer building multi-agent AI systems, LLMOps, healthcare intelligence, and scalable cloud software." />
+  <link rel="canonical" href="https://dannyb66.github.io/" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Danny Basavaraju",
+      "url": "https://dannyb66.github.io/",
+      "jobTitle": "Principal Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Trek Health",
+        "url": "https://www.trekhealth.io/"
+      },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Delhi" },
+        { "@type": "CollegeOrUniversity", "name": "Indian Institute of Management Calcutta" }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/dannybasavaraju/",
+        "https://github.com/dannyb66",
+        "https://www.youtube.com/@sohamhamso"
+      ],
+      "knowsAbout": [
+        "Artificial intelligence",
+        "Multi-agent systems",
+        "Large language models",
+        "LLMOps",
+        "AI evaluation and governance",
+        "Healthcare intelligence",
+        "Distributed systems",
+        "Cloud architecture"
+      ]
+    }
+  </script>
   <style>
     :root {
       --bg: #ffffff;
@@ -29,6 +75,14 @@
     * {
       box-sizing: border-box;
       scroll-behavior: smooth;
+    }
+
+    html {
+      color-scheme: light;
+    }
+
+    html[data-theme="dark"] {
+      color-scheme: dark;
     }
 
     body {
@@ -99,6 +153,8 @@
 
     .section {
       margin-top: 3rem;
+      content-visibility: auto;
+      contain-intrinsic-size: 0 500px;
     }
 
     .section h2 {
@@ -133,6 +189,30 @@
       font-weight: 600;
     }
 
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin: 0.35rem 0 0;
+    }
+
+    .project-group {
+      margin-top: 2rem;
+    }
+
+    .project-group h3 {
+      margin-bottom: 0.75rem;
+    }
+
+    .project p {
+      margin-top: 0.4rem;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 0.4rem;
+    }
+
     .technologies {
       font-size: 0.9rem;
       margin-top: 0.5rem;
@@ -150,6 +230,23 @@
     a:hover {
       text-decoration: underline;
       color: darkorange;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
     }
 
     @media (max-width: 768px) {
@@ -243,14 +340,20 @@
 
 <body>
   <header>
-    <h1>Danny Basavaraju</h1>
-    <button id="toggle-theme">🌙 Dark Mode</button>
+    <div>
+      <h1>Danny Basavaraju</h1>
+      <p class="eyebrow">Principal Engineer · AI Platforms &amp; Agentic AI · San Francisco Bay Area</p>
+    </div>
+    <button id="toggle-theme" type="button" aria-pressed="false" aria-label="Switch to dark mode">🌙 Dark Mode</button>
   </header>
 
+  <main>
   <div class="section">
     <h2>About Me</h2>
-    <p><strong>Full-stack AI engineer | Ex-CTO | Built scalable systems at Chill Panda, BYJU’S, RIVIGO | IIT Delhi + IIM Calcutta | Bay Area-ready</strong></p>
-    <p>I'm a builder at heart with 6+ years of experience shipping full-stack products at scale, from consumer apps to internal tools. I co-founded a B2B SaaS startup, led engineering at BYJU’S and RIVIGO, and now focus on AI products that ship. I thrive in ambiguous 0→1 environments and work best with founders and product-minded teams. I write clean code, iterate fast, and bring a product-first lens to every tech stack.</p>
+    <p><strong>I build production AI platforms, agentic systems, and scalable software.</strong></p>
+    <p>I am a hands-on AI software engineer and former founder focused on multi-agent orchestration, LLMOps, evaluations, governance, RAG, tool calling, context engineering, and reliable cloud-native systems.</p>
+    <p>Currently Principal Engineer at Trek Health, based in the San Francisco Bay Area, building healthcare intelligence products across contracts, payer policies, transparency data, and enterprise workflows.</p>
+    <p>My experience spans healthcare AI/ML, SaaS, financial technology, consumer software, distributed systems, cloud infrastructure, and product strategy.</p>
   </div>
 
   <div class="section">
@@ -260,42 +363,68 @@
     <ul class="skills-list">
       <li>Languages: Python, TypeScript, JavaScript, C/C++, SQL, R, Scala</li>
       <li>Frameworks & Libraries: React.js, Next.js, React Native, AngularJS, Vue.js, Node.js, Nest.js, Django, Flask, FastAPI, Redux.js, Express, Hibernate</li>
+      <li>AI Systems: Multi-agent orchestration, LLMOps, RAG, tool calling, context engineering, agent memory, evaluations, observability, reliability, and AI governance</li>
       <li>AI/ML: TensorFlow, PyTorch, Scikit-learn, LangChain, NLP, LLMs, Reinforcement Learning, Neural Networks, Deep Learning, Prompt Engineering, OpenAI API</li>
       <li>Cloud & DevOps: AWS, GCP, Azure, Docker, Kubernetes, CI/CD, CloudFormation, Airflow, Heroku</li>
       <li>Big Data & Databases: Apache Kafka, Spark, Hive, Hadoop, BigQuery, Snowflake, Cassandra, Redis, MongoDB, Postgres, MySQL, NoSQL, RDBMS</li>
+      <li>Data & Systems: Data modeling, asynchronous processing, distributed systems, multi-tenant architecture, REST APIs, GraphQL, WebSockets, system architecture, and containerization</li>
+      <li>Product & Leadership: Software architecture, system design, technical strategy, engineering management, product strategy, analytics, UX collaboration, and full-stack development</li>
       <li>Tools: Git, JIRA, Asana, Figma, Mixpanel, Amplitude, Hotjar, Postman, Zeplin, Wireframe, Webpack, Selenium, Power BI, Tableau, Excel, MATLAB, PowerPoint, Webflow, Wordpress</li>
       <li>Other: API Design (REST/GraphQL/WebSockets), CI/CD Pipelines, Data Modeling, System Architecture, Containerization, Parallel Computing, SDLC, Financial & Quantitative Analysis, Blockchain, Unity, WebRTC, Vim, Operating Systems, Cryptography</li>
     </ul>
   
     <h3>Certifications</h3>
     <ul class="cert-list">
-      <li>MIT OpenCourseWare – Distributed Systems & Cloud Computing</li>
-      <li>Coursera – Advanced Data Structures (Stanford)</li>
-      <li>Google Cloud – Professional Cloud Architect Certification</li>
-      <li>Generative AI with Large Language Models – DeepLearning.AI</li>
-      <li>Prompt Engineering for Developers – OpenAI & DeepLearning.AI</li>
-      <li>Full-Stack Web Development – The Odin Project</li>
+      <li>Foundations and Core Concepts of PyTorch — Packt, July 2025</li>
+      <li>Introduction to Large Language Models — Google Cloud Training Online, July 2025</li>
+      <li>Indian Institute of Technology Delhi — B.Tech., Computer Science, 2012–2016</li>
+      <li>Indian Institute of Management Calcutta — MBA, Product, 2018–2020</li>
     </ul>
   
     <h3>Competitions & Coursework</h3>
     <ul class="skills-list">
-      <li>Competitions: LeetCode (Top 5%), Topcoder, Kaggle, Hackathons (Winner/Finalist)</li>
-      <li>Coursework: Advanced Algorithms, Microservices, Scalable Backend, ML & AI Engineering, Cloud Computing & Kubernetes, DevOps, Parallel Processing, Database Optimization, Software Architecture</li>
+      <li>Focus: Agentic AI, LLM platforms, healthcare intelligence, contract/document intelligence, scalable data platforms, and cloud architecture</li>
+      <li>Coursework: Advanced Algorithms, Microservices, Scalable Backend, ML & AI Engineering, Cloud Computing, DevOps, Parallel Processing, Database Optimization, Software Architecture</li>
     </ul>
   </div>
 
   <div class="section">
-    <h2>Projects</h2>
+    <h2>Experience</h2>
+    <ul class="skills-list">
+      <li><strong>Principal Engineer · Trek Health · Jun 2025–Present</strong> Architecting AI-powered healthcare intelligence products across provider contracts, payer policies, transparency data, agentic workflows, and multi-tenant SaaS infrastructure.</li>
+      <li><strong>Senior Software Engineer · Sybill · Jun 2024–Dec 2024</strong> Built platform capabilities for a B2B AI assistant with Python, Node.js, React, and Next.js.</li>
+      <li><strong>Senior Software Engineer · Quantgro Wealth Management · Oct 2023–May 2024</strong> Built AI-driven financial systems and automated trading infrastructure.</li>
+      <li><strong>Senior Software Engineer · Chill Panda Tech · Oct 2021–Sep 2023</strong> Built and scaled SaaS engagement products for retail businesses, salons, clinics, hotels, and restaurants.</li>
+      <li><strong>Chief of Staff · BYJU'S · Jun 2020–Oct 2021</strong> Led strategy, planning, marketing, supply-chain, and user-experience initiatives across a large education business.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Projects &amp; Repositories</h2>
+    <p>Current work is shown first, followed by a complete catalog of personal projects and experiments.</p>
+    <h3>Public highlight</h3>
+    <p><strong>SponsorSkip</strong> — A project built with the team at Fetch.ai's agentic hackathon, exploring automatic detection and skipping of sponsored segments in YouTube videos.</p>
+    <p><strong>Chill Panda Tech</strong> — Consumer software for salons, with interactive service menus, recommendations, and voucher workflows.</p>
     <div id="projects-container"></div>
+    <noscript>
+      <p>JavaScript is disabled. Browse the featured repositories directly:</p>
+      <ul>
+        <li><a href="https://github.com/Trek-Health/agent_hub">Agent Hub</a></li>
+        <li><a href="https://github.com/Trek-Health/contract_intelligence">Contract Intelligence</a></li>
+        <li><a href="https://github.com/dannyb66/codex-selfhosted">Codex Self-Hosted</a></li>
+        <li><a href="https://github.com/dannyb66/sohamhamso">Sohamhamso</a></li>
+      </ul>
+    </noscript>
   </div>
 
   <div class="section">
     <h2>Contact</h2>
     <p><a href="mailto:danny.basavaraju@gmail.com">danny.basavaraju@gmail.com</a></p>
-    <p><a href="https://www.linkedin.com/in/dannybasavaraju" target="_blank">LinkedIn</a></p>
-    <p><a href="https://github.com/deepak66" target="_blank">GitHub</a></p>
-    <p><a href="https://www.youtube.com/@sohamhamso" target="_blank">YouTube</a></p>
+    <p><a href="https://www.linkedin.com/in/dannybasavaraju/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    <p><a href="https://github.com/dannyb66" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    <p><a href="https://www.youtube.com/@sohamhamso" target="_blank" rel="noopener noreferrer">YouTube</a></p>
   </div>
+  </main>
 
   <script>
     const toggleBtn = document.getElementById('toggle-theme');
@@ -304,179 +433,204 @@
       const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', nextTheme);
       toggleBtn.textContent = nextTheme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+      toggleBtn.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+      toggleBtn.setAttribute('aria-label', nextTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
     });
 
     const projects = [
       {
-        title: 'sohamhamso-ai-youtube-studio',
-        description: 'Built a YouTube channel functioning as an AI-native creative studio focused on Hindu scriptures, devotional songs, and spiritual content, using generative AI to bring ancient wisdom to life in modern formats.',
-        link: 'https://www.youtube.com/@sohamhamso',
-        technologies: ['YouTube', 'Generative AI', 'Video Editing', 'Spiritual Content']
+        category: 'AI, agents, and automation',
+        title: 'Agent Hub',
+        description: 'AI-agent and engineering workflow work at Trek Health.',
+        link: 'https://github.com/Trek-Health/agent_hub',
+        technologies: ['AI Agents', 'Workflow Automation', 'Product Engineering']
       },
       {
-        title: 'twitter-auto-poster-bot-ai',
-        description: 'Developed an AI-powered automation bot that schedules and posts tweets using GPT-generated content, optimizing engagement workflows for content creators.',
-        link: 'https://github.com/deepakb66/twitter-auto-poster-bot-ai',
-        technologies: ['Python', 'GPT', 'OpenAI API', 'Scheduling']
+        category: 'AI, agents, and automation',
+        title: 'Contract Intelligence',
+        description: 'Contract and healthcare workflow product work at Trek Health.',
+        link: 'https://github.com/Trek-Health/contract_intelligence',
+        technologies: ['AI', 'Healthcare', 'Contracts', 'Next.js']
       },
       {
+        category: 'AI, agents, and automation',
+        title: 'codex-selfhosted',
+        description: 'Run the Codex CLI against self-hosted vLLM models on AWS GPU infrastructure, with multi-account operations and scale-to-zero deployment workflows.',
+        link: 'https://github.com/dannyb66/codex-selfhosted',
+        technologies: ['Python', 'AWS', 'vLLM', 'Terraform', 'Docker']
+      },
+      {
+        category: 'AI, agents, and automation',
         title: 'dental-chatbot',
-        description: 'Engineered a domain-specific chatbot for dental consultation using NLP techniques and TypeScript, providing automated responses and scalable patient support.',
+        description: 'A conversational dental assistant focused on patient support, scheduling, and family booking workflows.',
         link: 'https://github.com/deepakb66/dental-chatbot',
         technologies: ['TypeScript', 'NLP', 'Node.js']
       },
       {
-        title: 'gita-shorts',
-        description: 'Created a content generation engine that transforms Bhagavad Gita verses into short-form web content, integrating spirituality with digital storytelling.',
-        link: 'https://github.com/fuzzy-rotary-phone/gita-shorts',
-        technologies: ['JavaScript', 'Content Automation', 'Spirituality']
-      },
-      {
+        category: 'AI, agents, and automation',
         title: 'jobrobo',
-        description: 'Developed an intelligent LinkedIn job application bot that automates job search, form-filling, and resume customization using web scraping and OpenAI. Applies to 100+ jobs/hour with human-like behavior, bypassing detection systems.',
+        description: 'An automation experiment for job discovery, application workflows, and resume customization using Python and language-model tooling.',
         link: 'https://github.com/deepakb66/jobrobo',
-        technologies: ['Python', 'Web Scraping', 'OpenAI', 'Automation', 'Selenium', 'PyAutoGUI']
+        technologies: ['Python', 'OpenAI', 'Selenium', 'Automation']
       },
       {
+        category: 'AI, agents, and automation',
+        title: 'twitter-auto-poster-bot-ai',
+        description: 'AI-assisted content generation and scheduling automation for Twitter/X workflows.',
+        link: 'https://github.com/deepakb66/twitter-auto-poster-bot-ai',
+        technologies: ['Python', 'OpenAI API', 'Scheduling']
+      },
+      {
+        category: 'AI, agents, and automation',
         title: 'connectrobo',
-        description: 'Built a LinkedIn Auto Connector Bot that automates sending connection requests with personalized messages using Selenium. Enables network growth based on search filters like job title, location, and industry, with logging and configuration support.',
+        description: 'A Selenium-based browser automation experiment for personalized connection workflows and configurable search criteria.',
         link: 'https://github.com/deepakb66/connectrobo',
-        technologies: ['Python', 'Selenium', 'Web Automation', 'Browser Automation', 'Geckodriver']
+        technologies: ['Python', 'Selenium', 'Browser Automation']
       },
       {
-        title: 'project-finance-v1',
-        description: 'Developed a financial modeling tool to simulate budget flows and optimize ROI for startup projects and operational decisions.',
-        link: 'https://github.com/fuzzy-rotary-phone/project-finance-v1',
-        technologies: ['Python', 'Finance', 'Modeling']
+        category: 'AI, agents, and automation',
+        title: 'trek-bot',
+        description: 'An early automation and bot experiment from the Trek project ecosystem.',
+        link: 'https://github.com/dannyb66/trek-bot',
+        technologies: ['Automation', 'Bots']
       },
       {
-        title: 'python-course',
-        description: 'Created a modular Python learning curriculum with hands-on Jupyter notebooks, covering essential data structures, algorithms, and ML fundamentals for self-paced upskilling.',
-        link: 'https://github.com/deepakb66/python-course',
-        technologies: ['Python', 'Jupyter', 'Machine Learning']
+        category: 'Web and product applications',
+        title: 'sohamhamso',
+        description: 'A multilingual reader for the Tantric, Kashmir Shaivism, Trika, and Kaula corpus, with original texts, transliteration, glosses, and translations.',
+        link: 'https://github.com/dannyb66/sohamhamso',
+        technologies: ['Astro', 'Solid.js', 'SQLite', 'Cloudflare']
       },
       {
+        category: 'Web and product applications',
+        title: 'dannyb66.github.io',
+        description: 'This portfolio site, published through GitHub Pages.',
+        link: 'https://github.com/dannyb66/dannyb66.github.io',
+        technologies: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages']
+      },
+      {
+        category: 'Web and product applications',
+        title: 'sample-frontend',
+        description: 'A React frontend project with experiments in asynchronous draft workflows and opt-in LLM replies.',
+        link: 'https://github.com/deepakb66/sample-frontend',
+        technologies: ['React', 'JavaScript', 'LLM Workflows']
+      },
+      {
+        category: 'Web and product applications',
         title: 'practice-frontend',
-        description: 'Implemented reusable UI components and frontend logic using TypeScript and modern frameworks to practice responsive and scalable web interfaces.',
+        description: 'Frontend practice project for reusable components, responsive interfaces, and application structure.',
         link: 'https://github.com/deepakb66/practice-frontend',
-        technologies: ['TypeScript', 'React', 'CSS']
+        technologies: ['React', 'TypeScript', 'CSS']
       },
       {
+        category: 'Web and product applications',
         title: 'vanilla-frontend',
-        description: 'Developed browser-compatible projects using pure HTML, CSS, and JavaScript to strengthen DOM manipulation and event-driven programming skills.',
+        description: 'Browser projects exploring DOM manipulation, event-driven behavior, and native HTML, CSS, and JavaScript.',
         link: 'https://github.com/deepakb66/vanilla-frontend',
         technologies: ['HTML', 'CSS', 'JavaScript']
       },
       {
-        title: 'github-config',
-        description: 'Centralized repository for managing GitHub profile configuration, badges, and automation hooks for a consistent developer identity.',
-        link: 'https://github.com/deepakb66/github-config',
-        technologies: ['Markdown', 'GitHub Actions']
+        category: 'Web and product applications',
+        title: 'mrf-clone',
+        description: 'A product and interface experimentation project based on a modern web application workflow.',
+        link: 'https://github.com/dannyb66/mrf-clone',
+        technologies: ['Web Development', 'UI']
       },
       {
+        category: 'Finance and learning',
+        title: 'option-trading-final',
+        description: 'An options and financial-technology project exploring market workflows and trading-system ideas.',
+        link: 'https://github.com/deepakb66/option-trading-final',
+        technologies: ['Python', 'Finance', 'Trading']
+      },
+      {
+        category: 'Finance and learning',
+        title: 'option-trading-course',
+        description: 'Course material and experiments for learning quantitative and options-trading concepts.',
+        link: 'https://github.com/deepakb66/option-trading-course',
+        technologies: ['Python', 'Finance', 'Learning']
+      },
+      {
+        category: 'Finance and learning',
+        title: 'python-course',
+        description: 'A modular Python learning curriculum with notebooks and exercises for programming and machine-learning fundamentals.',
+        link: 'https://github.com/deepakb66/python-course',
+        technologies: ['Python', 'Jupyter', 'Machine Learning']
+      },
+      {
+        category: 'Experiments and utilities',
+        title: 'cmp-test',
+        description: 'A cost and comparison experimentation repository for evaluating application and model workflows.',
+        link: 'https://github.com/dannyb66/cmp-test',
+        technologies: ['Experiments', 'Cost Analysis']
+      },
+      {
+        category: 'Experiments and utilities',
+        title: 'soham-hamso',
+        description: 'An earlier project in the Soham Hamso product and content ecosystem.',
+        link: 'https://github.com/dannyb66/soham-hamso',
+        technologies: ['Web Development', 'Content']
+      },
+      {
+        category: 'Experiments and utilities',
         title: 'deepakb66.github.io',
-        description: 'Deployed a personal static portfolio site using GitHub Pages to showcase projects and professional background with minimal hosting overhead.',
+        description: 'An earlier GitHub Pages portfolio maintained under the legacy repository identity.',
         link: 'https://github.com/deepakb66/deepakb66.github.io',
         technologies: ['HTML', 'CSS', 'GitHub Pages']
-      }, 
-      // Add more projects here as needed
-      {
-        title: 'scrapper-engine',
-        description: 'Built a Python-based scraping engine to automate data extraction from various web sources, laying the foundation for downstream data analytics and AI training.',
-        link: 'https://github.com/fuzzy-rotary-phone/scrapper-engine',
-        technologies: ['Python', 'Web Scraping', 'Automation']
-      },
-      {
-        title: 'dashboard-complete',
-        description: 'Designed and implemented a full-stack analytics dashboard with modern web components and real-time data updates for performance insights.',
-        link: 'https://github.com/fuzzy-rotary-phone/dashboard-complete',
-        technologies: ['JavaScript', 'HTML/CSS', 'Frontend']
-      },
-      {
-        title: 'fuzzy-rotary-phone.github.io',
-        description: 'Launched a personal portfolio website using GitHub Pages to showcase technical projects, resume, and blog content with static web hosting.',
-        link: 'https://github.com/fuzzy-rotary-phone/fuzzy-rotary-phone.github.io',
-        technologies: ['JavaScript', 'GitHub Pages', 'HTML/CSS']
-      },
-      {
-        title: 'chill-panda-us',
-        description: 'Legacy repo of Chill Panda project aimed at building digital well-being products; includes experiments and MVP prototypes.',
-        link: 'https://github.com/fuzzy-rotary-phone/chill-panda-us',
-        technologies: ['JavaScript', 'Startup', 'Prototype']
-      },
-      {
-        title: 'dalp-website',
-        description: 'Developed a responsive marketing site for the DALP initiative using modern frontend practices and clear UI design.',
-        link: 'https://github.com/fuzzy-rotary-phone/dalp-website',
-        technologies: ['JavaScript', 'Responsive Design']
-      },
-      {
-        title: 'studio-dalp',
-        description: 'Repository for internal tools and assets powering Studio DALP’s operations and experimental product launches.',
-        link: 'https://github.com/fuzzy-rotary-phone/studio-dalp',
-        technologies: ['Web Dev', 'Internal Tools']
-      },
-      {
-        title: 'whatsapp-buttercup-lopsided-meadow',
-        description: 'An experimental front-end project focused on building interactive messaging UI using JavaScript components.',
-        link: 'https://github.com/fuzzy-rotary-phone/whatsapp-buttercup-lopsided-meadow',
-        technologies: ['JavaScript', 'UI', 'Frontend']
-      },
-      {
-        title: 'chill-panda-old-repo',
-        description: 'Archived version of Chill Panda MVP with early-stage product logic and frontend workflows.',
-        link: 'https://github.com/fuzzy-rotary-phone/chill-panda-old-repo',
-        technologies: ['JavaScript', 'Prototype', 'Startup']
-      },
-      {
-        title: 'slidesgo-scrapper',
-        description: 'Automated scraping utility to extract template data from Slidesgo for easy content repurposing.',
-        link: 'https://github.com/fuzzy-rotary-phone/slidesgo-scrapper',
-        technologies: ['Web Scraping', 'Automation']
-      },
-      {
-        title: 'demo-games',
-        description: 'Fun experimental mini-games built with JavaScript, used to explore game logic and frontend rendering techniques.',
-        link: 'https://github.com/fuzzy-rotary-phone/demo-games',
-        technologies: ['JavaScript', 'Games', 'DOM']
-      },
-      {
-        title: 'dashboard',
-        description: 'Forked analytics dashboard for experimenting with data visualizations and UI layouts.',
-        link: 'https://github.com/fuzzy-rotary-phone/dashboard',
-        technologies: ['CSS', 'Forked Project', 'MIT License']
-      },
-      {
-        title: 'chill-panda-mvp',
-        description: 'Minimum viable product build of the Chill Panda startup, focused on user well-being and digital habits.',
-        link: 'https://github.com/fuzzy-rotary-phone/chill-panda-mvp',
-        technologies: ['JavaScript', 'Startup', 'HealthTech']
-      },
-      {
-        title: 'Restaurant-PoS-1',
-        description: 'Forked Point-of-Sale React application for restaurant management including multi-guest ordering and receipt generation.',
-        link: 'https://github.com/fuzzy-rotary-phone/Restaurant-PoS-1',
-        technologies: ['JavaScript', 'React', 'POS']
-      }      
+      }
     ];
 
     const container = document.getElementById('projects-container');
-    projects.forEach(p => {
-      const div = document.createElement('div');
-      div.className = 'project';
-      const techList = p.technologies?.map(t => `<span>${t}</span>`).join(', ') || '';
-      div.innerHTML = `
-        <h3>${p.title}</h3>
-        <p>${p.description}</p>
-        <a href="${p.link}" target="_blank">View Project</a>
-        ${techList ? `<div class="technologies"><strong>Technologies:</strong> ${techList}</div>` : ''}
-      `;
-      container.appendChild(div);
+    const groups = new Map();
+    projects.forEach(project => {
+      if (!groups.has(project.category)) groups.set(project.category, []);
+      groups.get(project.category).push(project);
+    });
+
+    groups.forEach((items, category) => {
+      const group = document.createElement('section');
+      group.className = 'project-group';
+
+      const heading = document.createElement('h3');
+      heading.textContent = category;
+      group.appendChild(heading);
+
+      items.forEach(project => {
+        const card = document.createElement('article');
+        card.className = 'project';
+
+        const title = document.createElement('h3');
+        title.textContent = project.title;
+        card.appendChild(title);
+
+        const description = document.createElement('p');
+        description.textContent = project.description;
+        card.appendChild(description);
+
+        const link = document.createElement('a');
+        link.className = 'project-link';
+        link.href = project.link;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.textContent = 'View repository';
+        card.appendChild(link);
+
+        const technologies = document.createElement('div');
+        technologies.className = 'technologies';
+        const technologyLabel = document.createElement('strong');
+        technologyLabel.textContent = 'Technologies: ';
+        technologies.appendChild(technologyLabel);
+        technologies.appendChild(document.createTextNode(project.technologies.join(', ')));
+        card.appendChild(technologies);
+
+        group.appendChild(card);
+      });
+
+      container.appendChild(group);
     });
   </script>
-  <!-- ChatGPT Signature -->
   <footer style="margin-top: 3rem; font-size: 0.9rem; text-align: center; color: var(--accent);">
-    100% AI-generated. I just clicked 'Run'.
+    Built with curiosity and shipped from the Bay Area.
   </footer>
 </body>
 </html>
