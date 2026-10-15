@@ -482,6 +482,10 @@
       white-space: nowrap;
     }
 
+    .download-cv[hidden] {
+      display: none;
+    }
+
     .download-cv:hover {
       background: var(--text);
       border-color: var(--text);
@@ -1143,7 +1147,7 @@
       </nav>
       <div class="header-actions">
         <button id="toggle-theme" type="button" aria-pressed="false" aria-label="Switch to dark mode">☾ Dark mode</button>
-        <a class="download-cv" href="assets/Danny-Basavaraju-CV.pdf" download="Danny-Basavaraju-CV.pdf" type="application/pdf" aria-label="Download CV — Danny Basavaraju’s full CV (PDF, 2 pages)">Download CV <span aria-hidden="true">↓</span></a>
+        <a class="download-cv" hidden href="assets/Danny-Basavaraju-CV.pdf" download="Danny-Basavaraju-CV.pdf" type="application/pdf" aria-label="Download CV — Danny Basavaraju’s full CV (PDF, 2 pages)">Download CV <span aria-hidden="true">↓</span></a>
       </div>
     </header>
 
@@ -1275,7 +1279,11 @@
     <footer>Principal Engineer · AI platforms · Agentic systems · San Francisco Bay Area</footer>
   </div>
 
+  <script src="site-config.js"></script>
   <script>
+    const downloadCvLink = document.querySelector('.download-cv');
+    downloadCvLink.hidden = !(window.siteConfig && window.siteConfig.downloadCv === true);
+
     const toggleBtn = document.getElementById('toggle-theme');
     const savedTheme = localStorage.getItem('theme');
     const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
