@@ -19,6 +19,7 @@
   <meta name="twitter:title" content="Danny Basavaraju | AI Platforms &amp; Agentic AI" />
   <meta name="twitter:description" content="Principal Engineer building agentic AI platforms, LLMOps, healthcare intelligence, self-hosted inference, and multilingual data products." />
   <link rel="canonical" href="https://dannyb66.github.io/" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -416,8 +417,9 @@
 
     .brand {
       display: inline-flex;
-      align-items: baseline;
+      align-items: center;
       gap: 0.55rem;
+      min-height: 44px;
       color: var(--text);
       font-size: 1.2rem;
       font-weight: 800;
@@ -427,7 +429,11 @@
     }
 
     .brand-mark {
-      color: var(--accent);
+      display: block;
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+      color: var(--text);
     }
 
     .brand-meta {
@@ -1135,7 +1141,11 @@
   <div class="site-shell" id="top">
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Danny Basavaraju home">
-        <span class="brand-mark">DB</span>
+        <svg class="brand-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="32" height="32" aria-hidden="true" focusable="false">
+          <path d="M100.00,18.00 L188.00,170.42 L12.00,170.42 Z" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round" />
+          <path d="M58.00,115.55 Q100,85.55 142.00,115.55 Q100,145.55 58.00,115.55 Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" />
+          <circle cx="100" cy="115.54910148227917" r="11" fill="currentColor" />
+        </svg>
         <span class="brand-meta">Principal Engineer</span>
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
